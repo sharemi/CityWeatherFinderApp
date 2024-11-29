@@ -1,0 +1,132 @@
+/* App.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+}
+
+.App {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+    margin: 20px;
+}
+
+.weather-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weather-container h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.weather-container input {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    transition: box-shadow 0.3s ease;
+}
+
+.weather-container input:focus {
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.weather-container button {
+    padding: 10px;
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.weather-container button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.weather-container .error {
+    margin-top: 20px;
+    color: #ff4d4d;
+}
+
+.weather-container .weather-result {
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    text-align: left;
+}
+
+.weather-container .weather-result h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.weather-container .weather-result p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.weather-container .weather-result img {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 10px auto;
+}
+
+.weather-container .loading {
+    margin-top: 20px;
+}
+
+.footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Responsive Design */
+@media (max-width: 375px) {
+    .App {
+        padding: 20px;
+    }
+
+    .weather-container h1 {
+        font-size: 24px;
+    }
+
+    .weather-container .weather-result h2 {
+        font-size: 20px;
+    }
+
+    .weather-container .weather-result p {
+        font-size: 16px;
+    }
+
+    .weather-container button {
+        font-size: 14px;
+    }
+}

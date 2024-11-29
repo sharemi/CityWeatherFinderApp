@@ -1,0 +1,87 @@
+## Description
+
+The City Weather Finder App is a web application that allows users to enter a city and view its current weather report in Celsius. The application fetches weather data from the OpenWeather API and displays it to the user. The project is built using Node.js for the backend and React for the frontend.
+
+## Features
+
+- View current weather information including temperature and weather conditions
+- Responsive design for various screen sizes
+- Error handling for invalid city names and network issues
+
+## Technologies Used
+
+- Node.js
+- Express
+- React
+- Axios
+- Jest (for unit testing)
+- Babel (for transpiling ES6+ code)
+
+## Setup Instructions
+
+### Prerequisites
+
+- Node.js and npm installed on your system
+- OpenWeather API key (sign up for a free account at [OpenWeather](https://openweathermap.org/))
+
+### Backend Setup
+
+1. Navigate to the `backend` directory:
+   
+   cd backend
+   
+2. Install dependencies:
+
+   npm install
+    
+
+3. Start the backend server:
+   
+   nodemon server.js 
+   OR
+   node server.js 
+   
+   
+
+### Frontend Setup
+
+1. Navigate to the `frontend` directory:
+   
+   cd frontend
+  
+
+2. Install dependencies:
+   
+   npm install
+   
+
+3. Start the frontend development server:
+   
+   npm start
+   
+
+
+## Running Tests
+
+### Backend Tests
+
+1. Navigate to the `backend` directory:
+   
+   cd backend
+   
+
+2. Run the tests:
+   
+   npm test
+   
+
+### Frontend Tests
+
+1. Navigate to the `frontend` directory:
+   
+   cd frontend
+   
+
+2. Run the tests:
+   
+   npm test
